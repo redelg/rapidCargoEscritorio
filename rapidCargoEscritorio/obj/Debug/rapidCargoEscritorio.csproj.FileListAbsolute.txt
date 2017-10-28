@@ -1,0 +1,2 @@
+D:\rapidCargoEscritorio\rapidCargoEscritorio\bin\Debug\rapidCargoEscritorio.exe.config
+C:\Users\Squish\Desktop\rapidCargoEscritorio\rapidCargoEscritorio\bin\Debug\rapidCargoEscritorio.exe.config
