@@ -46,16 +46,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Clases\CargaUnica.cs" />
+    <Compile Include="Clases\Ciudad.cs" />
+    <Compile Include="Clases\Cliente.cs" />
+    <Compile Include="Clases\Encomienda.cs" />
+    <Compile Include="Clases\EntregaUnica.cs" />
+    <Compile Include="Clases\EstadoEncomienda.cs" />
+    <Compile Include="Clases\Global.cs" />
+    <Compile Include="Clases\Persona.cs" />
+    <Compile Include="Clases\Personal.cs" />
+    <Compile Include="Clases\Rutas.cs" />
+    <Compile Include="Clases\Sucursal.cs" />
+    <Compile Include="Clases\TipoUsuario.cs" />
+    <Compile Include="Clases\TipoVehiculo.cs" />
+    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Clases\Vehiculo.cs" />
+    <Compile Include="frmCrearRuta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmCrearRuta.Designer.cs">
+      <DependentUpon>frmCrearRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuGerente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuGerente.Designer.cs">
+      <DependentUpon>frmMenuGerente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRutas.Designer.cs">
+      <DependentUpon>frmRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidarEliminarRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidarEliminarRuta.Designer.cs">
+      <DependentUpon>frmValidarEliminarRuta.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmCrearRuta.resx">
+      <DependentUpon>frmCrearRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuGerente.resx">
+      <DependentUpon>frmMenuGerente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRutas.resx">
+      <DependentUpon>frmRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidarEliminarRuta.resx">
+      <DependentUpon>frmValidarEliminarRuta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
