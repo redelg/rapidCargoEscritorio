@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,11 +65,23 @@
     <Compile Include="Clases\TipoVehiculo.cs" />
     <Compile Include="Clases\Usuario.cs" />
     <Compile Include="Clases\Vehiculo.cs" />
+    <Compile Include="frmCrearPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearPersonal.Designer.cs">
+      <DependentUpon>frmCrearPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCrearRuta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCrearRuta.Designer.cs">
       <DependentUpon>frmCrearRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrearVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearVehiculo.Designer.cs">
+      <DependentUpon>frmCrearVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -79,11 +95,23 @@
     <Compile Include="frmMenuGerente.Designer.cs">
       <DependentUpon>frmMenuGerente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonal.Designer.cs">
+      <DependentUpon>frmPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRutas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRutas.Designer.cs">
       <DependentUpon>frmRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidarEliminarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidarEliminarPersonal.Designer.cs">
+      <DependentUpon>frmValidarEliminarPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmValidarEliminarRuta.cs">
       <SubType>Form</SubType>
@@ -91,10 +119,28 @@
     <Compile Include="frmValidarEliminarRuta.Designer.cs">
       <DependentUpon>frmValidarEliminarRuta.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmValidarEliminarVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidarEliminarVehiculo.Designer.cs">
+      <DependentUpon>frmValidarEliminarVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVehiculos.Designer.cs">
+      <DependentUpon>frmVehiculos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCrearPersonal.resx">
+      <DependentUpon>frmCrearPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCrearRuta.resx">
       <DependentUpon>frmCrearRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearVehiculo.resx">
+      <DependentUpon>frmCrearVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -102,11 +148,23 @@
     <EmbeddedResource Include="frmMenuGerente.resx">
       <DependentUpon>frmMenuGerente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonal.resx">
+      <DependentUpon>frmPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRutas.resx">
       <DependentUpon>frmRutas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmValidarEliminarPersonal.resx">
+      <DependentUpon>frmValidarEliminarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmValidarEliminarRuta.resx">
       <DependentUpon>frmValidarEliminarRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidarEliminarVehiculo.resx">
+      <DependentUpon>frmValidarEliminarVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVehiculos.resx">
+      <DependentUpon>frmVehiculos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +175,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
